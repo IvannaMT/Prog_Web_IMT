@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("https://tecnoversia.com/wp-content/uploads/sites/2/2017/11/map-location-pin.jpg");
+   font-size: xx-large;
+   font-family: 'Open sans';
+
+}
+
+header{
+  width: 100%;
+}
+
+.navegacion{
+  width: 1100px ;
+  margin: 50px auto;
+  background: #000;
+}
+
+.navegacion ul{
+  list-style: none;
+}
+
+.menu > li{
+  position: relative;
+  display: inline-block;
+  
+}
+
+.menu > li > a{
+  display: block;
+  padding: 15px 40px;
+  color: #FFFFFF;
+  font-family: 'Open sans';
+  text-decoration: none;
+  font-size: xx-large;
+  
+}
+
+.menu li a:hover{
+  color: #CE7D35;
+  transition: all .3s;
+  background: #333333;
+   
+}
+
+/* Submenu*/
+
+.submenu{
+  position: absolute;
+  background: #333333;
+  width: 150%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+  font-size: xx-large;
+}
+
+.submenu li a{
+  display: block;
+  padding: 15px;
+  color: #fff;
+  font-family: 'Open sans';
+  text-decoration: none;
+}
+
+.menu li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+}
